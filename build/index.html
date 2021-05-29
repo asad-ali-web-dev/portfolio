@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS NavBar</title>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar" style="font-family: 'Odibee Sans', cursive;" class="relative bg-gray-50 p-2 flex justify-between shadow-inner">
+        <div id="navbar-logo" class="bg-transparent pt-2 pb-1 px-3 flex justify-center w-screen md:block md:w-auto">
+            <span class="text-[1.8em] md:text-[2.4em] text-red-400 uppercase transition-all duration-300 cursor-pointer tracking-normal hover:tracking-[0.2em]">
+                Asad Ali
+            </span>
+        </div>
+        <div id="navbar-menu" class="bg-transparent pt-2 pb-1 px-3 hidden md:flex items-center">
+            <div id="navbar-menu-links" class="none gap-5  transition-transform transform duration-700 md:translate-x-96">
+                <a href="#" class="transition-all duration-200 text-[1.5em] uppercase text-gray-300 hover:text-red-300 hover:tracking-wide">Welcome</a>
+                <a href="#" class="transition-all duration-200 text-[1.5em] uppercase text-gray-300 hover:text-red-300 hover:tracking-wide">Portfolio</a>
+                <a href="#" class="transition-all duration-200 text-[1.5em] uppercase text-gray-300 hover:text-red-300 hover:tracking-wide">About</a>
+                <a href="#" class="transition-all duration-200 text-[1.5em] uppercase text-gray-300 hover:text-red-300 hover:tracking-wide">Contact</a>
+            </div>
+            <div id="navbar-menu-btn" class="cursor-pointer absolute right-0 top-0 bottom-0 bg-red-400 flex items-center justify-center transition-transform duration-700 transform translate-x-0">
+                <span class="text-[1.5em] uppercase mt-1 transition-all duration-200 text-red-300 hover:text-gray-50 px-5">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <script src="./main.js"></script>
+</body>
+</html>
